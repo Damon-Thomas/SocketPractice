@@ -1,0 +1,19 @@
+{
+  "name": "socketpractice",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Damon-Thomas/SocketPractice#readme",
+  "bugs": {
+    "url": "https://github.com/Damon-Thomas/SocketPractice/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Damon-Thomas/SocketPractice.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
