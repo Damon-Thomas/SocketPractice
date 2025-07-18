@@ -7,7 +7,7 @@ const port = 8888;
 // Enable CORS for all routes
 app.use(
   cors({
-    origin: "http://localhost:5173", // Allow requests from your React app
+    origin: "http://localhost:8080", // Allow requests from your React app
     credentials: true,
   })
 );

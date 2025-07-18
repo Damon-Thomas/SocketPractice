@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./BEsocket
+    ports:
+      - "8888:8888"
+    environment:
+      - NODE_ENV=production
+
+  frontend:
+    build: ./socketFE
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
