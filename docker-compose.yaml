@@ -7,6 +7,12 @@ services:
       - "8888:8888"
     environment:
       - NODE_ENV=production
+    develop:
+      watch:
+        - action: rebuild
+          path: ./BEsocket
+          ignore:
+            - node_modules/
 
   frontend:
     build: ./socketFE
@@ -14,3 +20,10 @@ services:
       - "8080:80"
     depends_on:
       - backend
+    develop:
+      watch:
+        - action: rebuild
+          path: ./socketFE
+          ignore:
+            - node_modules/
+            - dist/
