@@ -25,6 +25,9 @@ RUN npm ci --omit=dev
 # Copy the rest of the source files into the image.
 COPY . .
 
+# Create a data directory for the database and set permissions
+RUN mkdir -p /usr/src/app/data && chown -R node:node /usr/src/app/data
+
 # Run the application as a non-root user.
 USER node
 
